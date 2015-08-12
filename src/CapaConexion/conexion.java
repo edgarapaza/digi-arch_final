@@ -88,14 +88,8 @@ public class conexion {
             Class.forName(this.driverClassName).newInstance();
             this.conn = DriverManager.getConnection(this.url, this.usuario, this.clave);
             //JOptionPane.showMessageDialog(null, "Conexion satisfactoria");
-        } catch (ClassNotFoundException err) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | SQLException err) {
            JOptionPane.showMessageDialog(null,"Error " + err.getMessage());
-        } catch (InstantiationException err) {
-            JOptionPane.showMessageDialog(null,"Error " + err.getMessage());
-        } catch (IllegalAccessException err) {
-            JOptionPane.showMessageDialog(null,"Error " + err.getMessage());
-        } catch (SQLException err) {
-            JOptionPane.showMessageDialog(null,"Error " + err.getMessage());
         }
     }
     //Cerrar la conexion

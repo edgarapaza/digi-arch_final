@@ -30,4 +30,8 @@ public class Validacion {
         return rpta;
     }
     
+    public void Campos_Vacios(){
+        
+            
+    }
 }

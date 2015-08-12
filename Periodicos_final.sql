@@ -67,17 +67,16 @@ CREATE TABLE `Proyecto` (
   `Año_final` char(4) NOT NULL,
   `Meses` varchar(88) NOT NULL,
   `Denominacion` varchar(60) NOT NULL,
-  `Cant_folios` tinyint(4) NOT NULL,
+  `Cant_folios` int(4) NOT NULL,
   `Cant_piezas` int(4) DEFAULT '0',
   `Imagen` blob,
   `Fecha_creacion` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `Fecha_cierre` datetime DEFAULT NULL,
-  `Proyectocol` varchar(45) NOT NULL,
   `Cod_trabajador` int(4) NOT NULL,
   `Estado` tinyint(1) NOT NULL,
   PRIMARY KEY (`Id_proyecto`),
   KEY `Cod_trabajadores_idx` (`Cod_trabajador`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -86,7 +85,7 @@ CREATE TABLE `Proyecto` (
 
 LOCK TABLES `Proyecto` WRITE;
 /*!40000 ALTER TABLE `Proyecto` DISABLE KEYS */;
-INSERT INTO `Proyecto` VALUES (1,'1',1,'1A','A','2014','2014','ENERO','ASDFH',0,0,NULL,'2015-08-11 18:03:26',NULL,'1',1,1);
+INSERT INTO `Proyecto` VALUES (1,'1',1,'1A','A','2014','2014','ENERO','ASDFH',0,0,NULL,'2015-08-11 18:03:26',NULL,1,1),(2,'+sta',0,'+bal','+codigo+','+yea','+yea','+meses+','+denominacion+',0,0,'+Imagen+','2015-08-12 16:57:15',NULL,0,0),(3,'45',5,'45','54','54','54','Marzo, Setiembre, Marzo, Setiembre','54 ',54,54,'null','2015-08-12 17:08:54',NULL,1,1),(4,'1',2,'2.A','PERI01-15LOSANDES','1990','1992','Marzo, Abril, Noviembre, Marzo, Abril, Noviembre','LOS ANDES ',123,80,'null','2015-08-12 17:16:43',NULL,1,1);
 /*!40000 ALTER TABLE `Proyecto` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -157,4 +156,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-08-11 16:27:46
+-- Dump completed on 2015-08-12 12:51:13

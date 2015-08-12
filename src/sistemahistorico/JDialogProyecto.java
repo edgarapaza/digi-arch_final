@@ -1,8 +1,10 @@
 
 package sistemahistorico;
 
+import java.awt.Color;
 import java.awt.event.KeyEvent;
 import java.sql.SQLException;
+import javax.swing.JOptionPane;
 
 
 public class JDialogProyecto extends javax.swing.JDialog {
@@ -12,11 +14,199 @@ public class JDialogProyecto extends javax.swing.JDialog {
     public JDialogProyecto(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        Limpiar();
         
         //CapaConexion.conexion conn = new CapaConexion.conexion();
         
     }
 
+    public void Limpiar(){
+        this.txtNumEstanteria.setText("");
+        this.txtCuerpo.setText("");
+        this.txtBalda.setText("");
+        this.txtCodigoLibro.setText("");
+        this.txtAñoInicial.setText("");
+        this.txtAñoFinal.setText("");
+        this.txtMeses.setText("");
+        this.txtDenominacion.setText("");
+        this.txtCantidadFolios.setText("");
+        this.txtCantPiezasDocum.setText("");
+        chkTodos.setSelected(false);
+        chkEnero.setSelected(false);
+        chkFebrero.setSelected(false);
+        chkMarzo.setSelected(false);
+        chkAbril.setSelected(false);
+        chkMayo.setSelected(false);
+        chkJunio.setSelected(false);
+        chkJulio.setSelected(false);
+        chkAgosto.setSelected(false);
+        chkSetiembre.setSelected(false);
+        chkOctubre.setSelected(false);
+        chkNoviembre.setSelected(false);
+        chkDiciembre.setSelected(false);
+    }
+    
+    
+    public void GenerarMeses(){
+        if(chkEnero.isSelected()==true){
+            chkTodos.setEnabled(true);
+            String cadena = this.txtMeses.getText();
+            if("".equals(cadena)){
+                this.txtMeses.setText("Enero");
+            }else{
+                this.txtMeses.setText(cadena+", Enero");
+            }  
+        }
+        
+        if(chkFebrero.isSelected()==true){
+            chkTodos.setEnabled(true);
+            String cadena = this.txtMeses.getText();
+            if("".equals(cadena)){
+                this.txtMeses.setText("Febrero");
+            }else{
+                this.txtMeses.setText(cadena+", Febrero");
+            }
+        }
+        
+        if(chkMarzo.isSelected()==true){
+            chkTodos.setEnabled(true);
+            String cadena = this.txtMeses.getText();
+            if("".equals(cadena)){
+                this.txtMeses.setText("Marzo");
+            }else{
+                this.txtMeses.setText(cadena+", Marzo");
+            }
+        }
+        
+        if(chkAbril.isSelected()==true){
+            chkTodos.setEnabled(true);
+            String cadena = this.txtMeses.getText();
+            if("".equals(cadena)){
+                this.txtMeses.setText("Abril");
+            }else{
+                this.txtMeses.setText(cadena+", Abril");
+            }
+        }
+        
+         if(chkMayo.isSelected()==true){
+            chkTodos.setEnabled(true);
+            String cadena = this.txtMeses.getText();
+            if("".equals(cadena)){
+                this.txtMeses.setText("Mayo");
+            }else{
+                this.txtMeses.setText(cadena+", Mayo");
+            }
+        }
+         
+          if(chkJunio.isSelected()==true){
+            chkTodos.setEnabled(true);
+            String cadena = this.txtMeses.getText();
+            if("".equals(cadena)){
+                this.txtMeses.setText("Junio");
+            }else{
+                this.txtMeses.setText(cadena+", Junio");
+            }
+        }
+          
+           if(chkJulio.isSelected()==true){
+            chkTodos.setEnabled(true);
+            String cadena = this.txtMeses.getText();
+            if("".equals(cadena)){
+                this.txtMeses.setText("Julio");
+            }else{
+                this.txtMeses.setText(cadena+", Julio");
+            }
+        }
+           
+           if(chkAgosto.isSelected()==true){
+            chkTodos.setEnabled(true);
+            String cadena = this.txtMeses.getText();
+            if("".equals(cadena)){
+                this.txtMeses.setText("Agosto");
+            }else{
+                this.txtMeses.setText(cadena+", Agosto");
+            }
+        }
+           
+           if(chkSetiembre.isSelected()==true){
+            chkTodos.setEnabled(true);
+            String cadena = this.txtMeses.getText();
+            if("".equals(cadena)){
+                this.txtMeses.setText("Setiembre");
+            }else{
+                this.txtMeses.setText(cadena+", Setiembre");
+            }
+        }
+           
+           if(chkOctubre.isSelected()==true){
+            chkTodos.setEnabled(true);
+            String cadena = this.txtMeses.getText();
+            if("".equals(cadena)){
+                this.txtMeses.setText("Octubre");
+            }else{
+                this.txtMeses.setText(cadena+", Octubre");
+            }
+        }
+           
+            if(chkNoviembre.isSelected()==true){
+            chkTodos.setEnabled(true);
+            String cadena = this.txtMeses.getText();
+            if("".equals(cadena)){
+                this.txtMeses.setText("Noviembre");
+            }else{
+                this.txtMeses.setText(cadena+", Noviembre");
+            }
+        }
+            
+            if(chkDiciembre.isSelected()==true){
+            chkTodos.setEnabled(true);
+            String cadena = this.txtMeses.getText();
+            if("".equals(cadena)){
+                this.txtMeses.setText("Diciembre");
+            }else{
+                this.txtMeses.setText(cadena+", Diciembre");
+            }
+        }
+    }
+    
+    public void Vacios(){
+        if("".equals(this.txtNumEstanteria.getText())){
+            this.txtNumEstanteria.setBackground(Color.yellow);
+            this.txtNumEstanteria.requestFocus();
+        }
+        if("".equals(this.txtCuerpo.getText())){
+            this.txtCuerpo.setBackground(Color.yellow);
+            this.txtCuerpo.requestFocus();
+        }
+        if("".equals(this.txtBalda.getText())){
+            this.txtBalda.setBackground(Color.yellow);
+            this.txtBalda.requestFocus();
+        }
+        if("".equals(this.txtCodigoLibro.getText())){
+            this.txtCodigoLibro.setBackground(Color.yellow);
+            this.txtCodigoLibro.requestFocus();
+        }
+        if("".equals(this.txtAñoInicial.getText())){
+            this.txtAñoInicial.setBackground(Color.yellow);
+            this.txtAñoInicial.requestFocus();
+        }
+        if("".equals(this.txtAñoFinal.getText())){
+            this.txtAñoFinal.setBackground(Color.yellow);
+            this.txtAñoFinal.requestFocus();
+        }
+        if("".equals(this.txtDenominacion.getText())){
+            this.txtDenominacion.setBackground(Color.yellow);
+            this.txtDenominacion.requestFocus();
+        }
+        if("".equals(this.txtCantidadFolios.getText())){
+            this.txtCantidadFolios.setBackground(Color.yellow);
+            this.txtCantidadFolios.requestFocus();
+        }
+        if("".equals(this.txtCantPiezasDocum.getText())){
+            this.txtCantPiezasDocum.setBackground(Color.yellow);
+            this.txtCantPiezasDocum.requestFocus();
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -62,57 +252,149 @@ public class JDialogProyecto extends javax.swing.JDialog {
         txtDenominacion = new javax.swing.JTextField();
         txtCantidadFolios = new javax.swing.JTextField();
         txtCantPiezasDocum = new javax.swing.JTextField();
+        txtMeses = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setBackground(new java.awt.Color(44, 44, 44));
 
+        jPanel1.setBackground(new java.awt.Color(93, 155, 172));
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setText("Numero Estanteria:");
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Numero Estanteria:*");
 
-        jLabel2.setText("Cuerpo:");
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Cuerpo:*");
 
-        jLabel4.setText("Balda:");
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Balda:*");
 
-        jLabel5.setText("Codigo Libro:");
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Codigo Libro:*");
 
-        jLabel6.setText("Año inicial:");
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("Año inicial:*");
 
-        jLabel7.setText("Año Final:");
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Año Final:*");
 
-        jLabel8.setText("Meses:");
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Meses:*");
 
+        chkTodos.setForeground(new java.awt.Color(255, 255, 255));
         chkTodos.setText("Todos");
+        chkTodos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                chkTodosActionPerformed(evt);
+            }
+        });
 
+        chkEnero.setForeground(new java.awt.Color(255, 255, 255));
         chkEnero.setText("Enero");
+        chkEnero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                chkEneroActionPerformed(evt);
+            }
+        });
 
+        chkFebrero.setForeground(new java.awt.Color(255, 255, 255));
         chkFebrero.setText("Febrero");
+        chkFebrero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                chkFebreroActionPerformed(evt);
+            }
+        });
 
+        chkMarzo.setForeground(new java.awt.Color(255, 255, 255));
         chkMarzo.setText("Marzo");
+        chkMarzo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                chkMarzoActionPerformed(evt);
+            }
+        });
 
+        chkAbril.setForeground(new java.awt.Color(255, 255, 255));
         chkAbril.setText("Abril");
+        chkAbril.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                chkAbrilActionPerformed(evt);
+            }
+        });
 
+        chkMayo.setForeground(new java.awt.Color(255, 255, 255));
         chkMayo.setText("Mayo");
+        chkMayo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                chkMayoActionPerformed(evt);
+            }
+        });
 
+        chkJunio.setForeground(new java.awt.Color(255, 255, 255));
         chkJunio.setText("Junio");
+        chkJunio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                chkJunioActionPerformed(evt);
+            }
+        });
 
+        chkJulio.setForeground(new java.awt.Color(255, 255, 255));
         chkJulio.setText("Julio");
+        chkJulio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                chkJulioActionPerformed(evt);
+            }
+        });
 
+        chkAgosto.setForeground(new java.awt.Color(255, 255, 255));
         chkAgosto.setText("Agosto");
+        chkAgosto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                chkAgostoActionPerformed(evt);
+            }
+        });
 
+        chkSetiembre.setForeground(new java.awt.Color(255, 255, 255));
         chkSetiembre.setText("Setiembre");
+        chkSetiembre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                chkSetiembreActionPerformed(evt);
+            }
+        });
 
+        chkOctubre.setForeground(new java.awt.Color(255, 255, 255));
         chkOctubre.setText("Octubre");
+        chkOctubre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                chkOctubreActionPerformed(evt);
+            }
+        });
 
+        chkNoviembre.setForeground(new java.awt.Color(255, 255, 255));
         chkNoviembre.setText("Nombiembre");
+        chkNoviembre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                chkNoviembreActionPerformed(evt);
+            }
+        });
 
+        chkDiciembre.setForeground(new java.awt.Color(255, 255, 255));
         chkDiciembre.setText("Diciembre");
+        chkDiciembre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                chkDiciembreActionPerformed(evt);
+            }
+        });
 
-        jLabel9.setText("Denominacion:");
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Denominacion:*");
 
-        jLabel10.setText("Cantidad de Folios:");
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Cantidad de Folios:*");
 
-        jLabel11.setText("Cant. Piezas Docum:");
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("Cant. Piezas Docum:*");
 
         btnImprimir.setText("Imprimir Lomo");
 
@@ -187,6 +469,12 @@ public class JDialogProyecto extends javax.swing.JDialog {
             }
         });
 
+        txtMeses.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtMesesActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -205,6 +493,9 @@ public class JDialogProyecto extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(txtDenominacion, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(chkJulio)
@@ -217,32 +508,33 @@ public class JDialogProyecto extends javax.swing.JDialog {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(chkFebrero)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(chkMarzo)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(chkAbril)
-                                    .addComponent(chkOctubre))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(chkMayo)
-                                    .addComponent(chkNoviembre))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(chkDiciembre)
-                                    .addComponent(chkJunio)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(12, 12, 12)
-                                .addComponent(txtDenominacion, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(9, 9, 9)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtCodigoLibro, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(chkMarzo))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(txtAñoInicial, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(9, 9, 9)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txtCodigoLibro, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(txtAñoInicial, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jLabel7)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(txtAñoFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(chkAbril)
+                                            .addComponent(chkOctubre))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel7)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(chkMayo)
+                                            .addComponent(chkNoviembre))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtAñoFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(chkDiciembre)
+                                            .addComponent(chkJunio))
+                                        .addGap(0, 0, Short.MAX_VALUE))
+                                    .addComponent(txtMeses)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
@@ -263,7 +555,7 @@ public class JDialogProyecto extends javax.swing.JDialog {
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(txtCantPiezasDocum, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
                                 .addComponent(txtCantidadFolios, javax.swing.GroupLayout.Alignment.LEADING)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -293,9 +585,10 @@ public class JDialogProyecto extends javax.swing.JDialog {
                 .addGap(11, 11, 11)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jLabel7)
                     .addComponent(txtAñoInicial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtAñoFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtAñoFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtMeses, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
@@ -333,6 +626,7 @@ public class JDialogProyecto extends javax.swing.JDialog {
                 .addGap(28, 28, 28))
         );
 
+        jLabel3.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         jLabel3.setText("CREACION DE UN NUEVO PROYECTO");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -340,14 +634,13 @@ public class JDialogProyecto extends javax.swing.JDialog {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(104, 104, 104)
-                        .addComponent(jLabel3))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addGap(223, 223, 223))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -356,7 +649,7 @@ public class JDialogProyecto extends javax.swing.JDialog {
                 .addComponent(jLabel3)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(53, 53, 53))
+                .addContainerGap())
         );
 
         pack();
@@ -364,11 +657,31 @@ public class JDialogProyecto extends javax.swing.JDialog {
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         // TODO add your handling code here:
+        Vacios();
+        GenerarMeses();
+        
+        int CodTrabajador = Integer.parseInt("1");
+        int Estado = Integer.parseInt("1");
+        GenerarMeses();
+        String stand = this.txtNumEstanteria.getText();
+        int cuerpo = Integer.parseInt(this.txtCuerpo.getText());
+        String balda = this.txtBalda.getText();
+        String codigo = this.txtCodigoLibro.getText();
+        String yearinicial = this.txtAñoInicial.getText();
+        String yearfinal = this.txtAñoFinal.getText();
+        String meses = this.txtMeses.getText();
+        String denominacion = this.txtDenominacion.getText();
+        int cantfolios = Integer.parseInt(this.txtCantidadFolios.getText());
+        int cantpiezas = Integer.parseInt(this.txtCantPiezasDocum.getText());
+        String Imagen = null;
+        
         try{
             conn.conectar();
-            //conn.insertar("INSERT INTO Periodicos.Proyecto(Id_proyecto,Num_stand,Cuerpo_colum,Balda,Codigo,Año_inicial,Año_final,Meses,Denominacion,Cant_folios,Cant_piezas,Imagen,Fecha_creacion,Fecha_cierre,Proyectocol,Cod_trabajador,Estado) VALUES (Id_proyecto,Num_stand,Cuerpo_colum,Balda,Codigo,Año_inicial,Año_final,Meses,Denominacion,Cant_folios,Cant_piezas,Imagen,Fecha_creacion,Fecha_cierre,Proyectocol,Cod_trabajador,Estado);");
-            conn.insertar("INSERT INTO Periodicos.Proyecto(Id_proyecto,Num_stand,Cuerpo_colum) VALUES (1,'"+this.txtNumEstanteria.getText()+"',"+this.txtCuerpo.getText()+");");
+            String sql = "INSERT INTO Proyecto(Num_stand,Cuerpo_colum,Balda,Codigo,Año_inicial,Año_final,Meses,Denominacion,Cant_folios,Cant_piezas,Imagen,Cod_trabajador,Estado) VALUES ('"+stand+"',"+cuerpo+",'"+balda+"','"+codigo+"' ,'"+yearinicial+"' ,'"+yearfinal+"' ,'"+meses+"','"+denominacion+" ',"+cantfolios+","+cantpiezas+" ,'"+Imagen+"' ,"+CodTrabajador+" ,"+Estado+");";
+            conn.insertar(sql);
             conn.cierraConexion();
+            JOptionPane.showMessageDialog(null, "Los datos fueron Guardados satisfactoriamente");
+            Limpiar();
         }catch(SQLException e){
             System.out.println(e);
         }
@@ -432,6 +745,90 @@ public class JDialogProyecto extends javax.swing.JDialog {
             this.btnGuardar.requestFocus();
         }
     }//GEN-LAST:event_txtCantPiezasDocumKeyPressed
+
+    private void txtMesesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMesesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtMesesActionPerformed
+
+    private void chkTodosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkTodosActionPerformed
+        if(chkTodos.isSelected()==true){
+            chkEnero.setSelected(true);
+            chkFebrero.setSelected(true);
+            chkMarzo.setSelected(true);
+            chkAbril.setSelected(true);
+            chkMayo.setSelected(true);
+            chkJunio.setSelected(true);
+            chkJulio.setSelected(true);
+            chkAgosto.setSelected(true);
+            chkSetiembre.setSelected(true);
+            chkOctubre.setSelected(true);
+            chkNoviembre.setSelected(true);
+            chkDiciembre.setSelected(true);
+            //this.txtMeses.setText("Enero a Diciembre");
+        }else{
+            chkEnero.setSelected(false);
+            chkFebrero.setSelected(false);
+            chkMarzo.setSelected(false);
+            chkAbril.setSelected(false);
+            chkMayo.setSelected(false);
+            chkJunio.setSelected(false);
+            chkJulio.setSelected(false);
+            chkAgosto.setSelected(false);
+            chkSetiembre.setSelected(false);
+            chkOctubre.setSelected(false);
+            chkNoviembre.setSelected(false);
+            chkDiciembre.setSelected(false);
+            this.txtMeses.setText(" ");
+        }
+    }//GEN-LAST:event_chkTodosActionPerformed
+
+    private void chkEneroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkEneroActionPerformed
+        
+    }//GEN-LAST:event_chkEneroActionPerformed
+
+    private void chkFebreroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkFebreroActionPerformed
+        
+    }//GEN-LAST:event_chkFebreroActionPerformed
+
+    private void chkMarzoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkMarzoActionPerformed
+        
+    }//GEN-LAST:event_chkMarzoActionPerformed
+
+    private void chkAbrilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkAbrilActionPerformed
+        
+    }//GEN-LAST:event_chkAbrilActionPerformed
+
+    private void chkMayoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkMayoActionPerformed
+       
+    }//GEN-LAST:event_chkMayoActionPerformed
+
+    private void chkJunioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkJunioActionPerformed
+       
+    }//GEN-LAST:event_chkJunioActionPerformed
+
+    private void chkJulioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkJulioActionPerformed
+       
+    }//GEN-LAST:event_chkJulioActionPerformed
+
+    private void chkAgostoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkAgostoActionPerformed
+        
+    }//GEN-LAST:event_chkAgostoActionPerformed
+
+    private void chkSetiembreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkSetiembreActionPerformed
+        
+    }//GEN-LAST:event_chkSetiembreActionPerformed
+
+    private void chkOctubreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkOctubreActionPerformed
+        
+    }//GEN-LAST:event_chkOctubreActionPerformed
+
+    private void chkNoviembreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkNoviembreActionPerformed
+       
+    }//GEN-LAST:event_chkNoviembreActionPerformed
+
+    private void chkDiciembreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkDiciembreActionPerformed
+        
+    }//GEN-LAST:event_chkDiciembreActionPerformed
 
     /**
      * @param args the command line arguments
@@ -512,6 +909,7 @@ public class JDialogProyecto extends javax.swing.JDialog {
     private javax.swing.JTextField txtCodigoLibro;
     private javax.swing.JTextField txtCuerpo;
     private javax.swing.JTextField txtDenominacion;
+    private javax.swing.JTextField txtMeses;
     private javax.swing.JTextField txtNumEstanteria;
     // End of variables declaration//GEN-END:variables
 }
