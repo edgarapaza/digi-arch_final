@@ -3,11 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/archivox/NetBeansProjects/digi-arch_final-master/src/CapaConexion/conexion.java</file>
-            <file>file:/home/archivox/NetBeansProjects/digi-arch_final-master/src/sistemahistorico/SistemaHistorico.java</file>
-            <file>file:/home/archivox/NetBeansProjects/digi-arch_final-master/src/sistemahistorico/JFrameProyectos.java</file>
-            <file>file:/home/archivox/NetBeansProjects/digi-arch_final-master/src/sistemahistorico/JDialogProyecto.java</file>
-            <file>file:/home/archivox/NetBeansProjects/digi-arch_final-master/src/sistemahistorico/FrmDocumentos.java</file>
+            <file>file:/home/archivox/NetBeansProjects/digi-arch/src/CapaMetodos/Validacion.java</file>
+            <file>file:/home/archivox/NetBeansProjects/digi-arch/src/sistemahistorico/JFrameProyectos.java</file>
+            <file>file:/home/archivox/NetBeansProjects/digi-arch/src/sistemahistorico/Login.java</file>
+            <file>file:/home/archivox/NetBeansProjects/digi-arch/src/sistemahistorico/SistemaHistorico.java</file>
+            <file>file:/home/archivox/NetBeansProjects/digi-arch/src/CapaConexion/conexion.java</file>
+            <file>file:/home/archivox/NetBeansProjects/digi-arch/src/sistemahistorico/Intro.java</file>
+            <file>file:/home/archivox/NetBeansProjects/digi-arch/src/sistemahistorico/JDialogProyecto.java</file>
         </group>
     </open-files>
 </project-private>

@@ -3,11 +3,18 @@ package sistemahistorico;
 
 import java.awt.Color;
 import java.awt.event.KeyEvent;
+<<<<<<< HEAD
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
 /*import Atxy2k.CustomTextField.RestrictedTextField;
 */
+=======
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
+
+
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
 public class JDialogProyecto extends javax.swing.JDialog {
 
     CapaConexion.conexion conn = new CapaConexion.conexion();
@@ -15,9 +22,14 @@ public class JDialogProyecto extends javax.swing.JDialog {
     public JDialogProyecto(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+<<<<<<< HEAD
         this.txtMeses.setVisible(false);
         Limpiar();
         Limitar();
+=======
+        Limpiar();
+        
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         //CapaConexion.conexion conn = new CapaConexion.conexion();
         
     }
@@ -173,6 +185,7 @@ public class JDialogProyecto extends javax.swing.JDialog {
     
     public void Vacios(){
         if("".equals(this.txtNumEstanteria.getText())){
+<<<<<<< HEAD
             this.txtNumEstanteria.setBackground(Color.lightGray);
             this.txtNumEstanteria.requestFocus();
         }
@@ -226,6 +239,44 @@ public class JDialogProyecto extends javax.swing.JDialog {
         limitar.setLimit(4);
     }
     */
+=======
+            this.txtNumEstanteria.setBackground(Color.yellow);
+            this.txtNumEstanteria.requestFocus();
+        }
+        if("".equals(this.txtCuerpo.getText())){
+            this.txtCuerpo.setBackground(Color.yellow);
+            this.txtCuerpo.requestFocus();
+        }
+        if("".equals(this.txtBalda.getText())){
+            this.txtBalda.setBackground(Color.yellow);
+            this.txtBalda.requestFocus();
+        }
+        if("".equals(this.txtCodigoLibro.getText())){
+            this.txtCodigoLibro.setBackground(Color.yellow);
+            this.txtCodigoLibro.requestFocus();
+        }
+        if("".equals(this.txtAñoInicial.getText())){
+            this.txtAñoInicial.setBackground(Color.yellow);
+            this.txtAñoInicial.requestFocus();
+        }
+        if("".equals(this.txtAñoFinal.getText())){
+            this.txtAñoFinal.setBackground(Color.yellow);
+            this.txtAñoFinal.requestFocus();
+        }
+        if("".equals(this.txtDenominacion.getText())){
+            this.txtDenominacion.setBackground(Color.yellow);
+            this.txtDenominacion.requestFocus();
+        }
+        if("".equals(this.txtCantidadFolios.getText())){
+            this.txtCantidadFolios.setBackground(Color.yellow);
+            this.txtCantidadFolios.requestFocus();
+        }
+        if("".equals(this.txtCantPiezasDocum.getText())){
+            this.txtCantPiezasDocum.setBackground(Color.yellow);
+            this.txtCantPiezasDocum.requestFocus();
+        }
+    }
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -272,17 +323,26 @@ public class JDialogProyecto extends javax.swing.JDialog {
         txtCantidadFolios = new javax.swing.JTextField();
         txtCantPiezasDocum = new javax.swing.JTextField();
         txtMeses = new javax.swing.JTextField();
+<<<<<<< HEAD
         jLabel12 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
+=======
+        jLabel3 = new javax.swing.JLabel();
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(44, 44, 44));
 
+<<<<<<< HEAD
         jPanel1.setBackground(new java.awt.Color(0, 130, 210));
+=======
+        jPanel1.setBackground(new java.awt.Color(93, 155, 172));
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -298,15 +358,25 @@ public class JDialogProyecto extends javax.swing.JDialog {
         jLabel5.setText("Codigo Libro:*");
 
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+<<<<<<< HEAD
         jLabel6.setText("Fecha Inicial*");
 
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Fecha Final*");
+=======
+        jLabel6.setText("Año inicial:*");
+
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Año Final:*");
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
 
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Meses:*");
 
+<<<<<<< HEAD
         chkTodos.setBackground(new java.awt.Color(0, 130, 210));
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         chkTodos.setForeground(new java.awt.Color(255, 255, 255));
         chkTodos.setText("Todos");
         chkTodos.addActionListener(new java.awt.event.ActionListener() {
@@ -315,7 +385,10 @@ public class JDialogProyecto extends javax.swing.JDialog {
             }
         });
 
+<<<<<<< HEAD
         chkEnero.setBackground(new java.awt.Color(0, 130, 210));
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         chkEnero.setForeground(new java.awt.Color(255, 255, 255));
         chkEnero.setText("Enero");
         chkEnero.addActionListener(new java.awt.event.ActionListener() {
@@ -324,7 +397,10 @@ public class JDialogProyecto extends javax.swing.JDialog {
             }
         });
 
+<<<<<<< HEAD
         chkFebrero.setBackground(new java.awt.Color(0, 130, 210));
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         chkFebrero.setForeground(new java.awt.Color(255, 255, 255));
         chkFebrero.setText("Febrero");
         chkFebrero.addActionListener(new java.awt.event.ActionListener() {
@@ -333,7 +409,10 @@ public class JDialogProyecto extends javax.swing.JDialog {
             }
         });
 
+<<<<<<< HEAD
         chkMarzo.setBackground(new java.awt.Color(0, 130, 210));
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         chkMarzo.setForeground(new java.awt.Color(255, 255, 255));
         chkMarzo.setText("Marzo");
         chkMarzo.addActionListener(new java.awt.event.ActionListener() {
@@ -342,7 +421,10 @@ public class JDialogProyecto extends javax.swing.JDialog {
             }
         });
 
+<<<<<<< HEAD
         chkAbril.setBackground(new java.awt.Color(0, 130, 210));
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         chkAbril.setForeground(new java.awt.Color(255, 255, 255));
         chkAbril.setText("Abril");
         chkAbril.addActionListener(new java.awt.event.ActionListener() {
@@ -351,7 +433,10 @@ public class JDialogProyecto extends javax.swing.JDialog {
             }
         });
 
+<<<<<<< HEAD
         chkMayo.setBackground(new java.awt.Color(0, 130, 210));
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         chkMayo.setForeground(new java.awt.Color(255, 255, 255));
         chkMayo.setText("Mayo");
         chkMayo.addActionListener(new java.awt.event.ActionListener() {
@@ -360,7 +445,10 @@ public class JDialogProyecto extends javax.swing.JDialog {
             }
         });
 
+<<<<<<< HEAD
         chkJunio.setBackground(new java.awt.Color(0, 130, 210));
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         chkJunio.setForeground(new java.awt.Color(255, 255, 255));
         chkJunio.setText("Junio");
         chkJunio.addActionListener(new java.awt.event.ActionListener() {
@@ -369,7 +457,10 @@ public class JDialogProyecto extends javax.swing.JDialog {
             }
         });
 
+<<<<<<< HEAD
         chkJulio.setBackground(new java.awt.Color(0, 130, 210));
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         chkJulio.setForeground(new java.awt.Color(255, 255, 255));
         chkJulio.setText("Julio");
         chkJulio.addActionListener(new java.awt.event.ActionListener() {
@@ -378,7 +469,10 @@ public class JDialogProyecto extends javax.swing.JDialog {
             }
         });
 
+<<<<<<< HEAD
         chkAgosto.setBackground(new java.awt.Color(0, 130, 210));
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         chkAgosto.setForeground(new java.awt.Color(255, 255, 255));
         chkAgosto.setText("Agosto");
         chkAgosto.addActionListener(new java.awt.event.ActionListener() {
@@ -387,7 +481,10 @@ public class JDialogProyecto extends javax.swing.JDialog {
             }
         });
 
+<<<<<<< HEAD
         chkSetiembre.setBackground(new java.awt.Color(0, 130, 210));
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         chkSetiembre.setForeground(new java.awt.Color(255, 255, 255));
         chkSetiembre.setText("Setiembre");
         chkSetiembre.addActionListener(new java.awt.event.ActionListener() {
@@ -396,7 +493,10 @@ public class JDialogProyecto extends javax.swing.JDialog {
             }
         });
 
+<<<<<<< HEAD
         chkOctubre.setBackground(new java.awt.Color(0, 130, 210));
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         chkOctubre.setForeground(new java.awt.Color(255, 255, 255));
         chkOctubre.setText("Octubre");
         chkOctubre.addActionListener(new java.awt.event.ActionListener() {
@@ -405,7 +505,10 @@ public class JDialogProyecto extends javax.swing.JDialog {
             }
         });
 
+<<<<<<< HEAD
         chkNoviembre.setBackground(new java.awt.Color(0, 130, 210));
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         chkNoviembre.setForeground(new java.awt.Color(255, 255, 255));
         chkNoviembre.setText("Nombiembre");
         chkNoviembre.addActionListener(new java.awt.event.ActionListener() {
@@ -414,7 +517,10 @@ public class JDialogProyecto extends javax.swing.JDialog {
             }
         });
 
+<<<<<<< HEAD
         chkDiciembre.setBackground(new java.awt.Color(0, 130, 210));
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         chkDiciembre.setForeground(new java.awt.Color(255, 255, 255));
         chkDiciembre.setText("Diciembre");
         chkDiciembre.addActionListener(new java.awt.event.ActionListener() {
@@ -433,11 +539,14 @@ public class JDialogProyecto extends javax.swing.JDialog {
         jLabel11.setText("Cant. Piezas Docum:*");
 
         btnImprimir.setText("Imprimir Lomo");
+<<<<<<< HEAD
         btnImprimir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnImprimirActionPerformed(evt);
             }
         });
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
 
         btnGuardar.setText("Guardar");
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
@@ -457,6 +566,7 @@ public class JDialogProyecto extends javax.swing.JDialog {
                 txtCuerpoActionPerformed(evt);
             }
         });
+<<<<<<< HEAD
         txtCuerpo.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtCuerpoKeyPressed(evt);
@@ -465,6 +575,8 @@ public class JDialogProyecto extends javax.swing.JDialog {
                 txtCuerpoKeyTyped(evt);
             }
         });
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
 
         txtBalda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -483,11 +595,14 @@ public class JDialogProyecto extends javax.swing.JDialog {
                 txtAñoInicialActionPerformed(evt);
             }
         });
+<<<<<<< HEAD
         txtAñoInicial.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtAñoInicialKeyTyped(evt);
             }
         });
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
 
         txtAñoFinal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -498,9 +613,12 @@ public class JDialogProyecto extends javax.swing.JDialog {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtAñoFinalKeyPressed(evt);
             }
+<<<<<<< HEAD
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtAñoFinalKeyTyped(evt);
             }
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         });
 
         txtDenominacion.addActionListener(new java.awt.event.ActionListener() {
@@ -514,11 +632,14 @@ public class JDialogProyecto extends javax.swing.JDialog {
                 txtCantidadFoliosActionPerformed(evt);
             }
         });
+<<<<<<< HEAD
         txtCantidadFolios.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtCantidadFoliosKeyTyped(evt);
             }
         });
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
 
         txtCantPiezasDocum.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -529,9 +650,12 @@ public class JDialogProyecto extends javax.swing.JDialog {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtCantPiezasDocumKeyPressed(evt);
             }
+<<<<<<< HEAD
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtCantPiezasDocumKeyTyped(evt);
             }
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         });
 
         txtMeses.addActionListener(new java.awt.event.ActionListener() {
@@ -540,9 +664,12 @@ public class JDialogProyecto extends javax.swing.JDialog {
             }
         });
 
+<<<<<<< HEAD
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Selecciona los Meses");
 
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -551,6 +678,7 @@ public class JDialogProyecto extends javax.swing.JDialog {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel10)
@@ -622,6 +750,80 @@ public class JDialogProyecto extends javax.swing.JDialog {
                                     .addComponent(txtCuerpo)
                                     .addComponent(txtBalda))))
                         .addGap(0, 538, Short.MAX_VALUE)))
+=======
+                    .addComponent(jLabel9)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel6)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(chkTodos)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(txtDenominacion, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(chkJulio)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(chkAgosto)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(chkSetiembre))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(chkEnero)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(chkFebrero)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(chkMarzo))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(9, 9, 9)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txtCodigoLibro, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(txtAñoInicial, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jLabel7)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(txtAñoFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(chkAbril)
+                                            .addComponent(chkOctubre))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(chkMayo)
+                                            .addComponent(chkNoviembre))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(chkDiciembre)
+                                            .addComponent(chkJunio))
+                                        .addGap(0, 0, Short.MAX_VALUE))
+                                    .addComponent(txtMeses)))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel4))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtNumEstanteria, javax.swing.GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)
+                            .addComponent(txtCuerpo)
+                            .addComponent(txtBalda)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel10)
+                            .addComponent(jLabel11))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnImprimir, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(txtCantPiezasDocum, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                                .addComponent(txtCantidadFolios, javax.swing.GroupLayout.Alignment.LEADING)))))
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -645,15 +847,24 @@ public class JDialogProyecto extends javax.swing.JDialog {
                     .addComponent(txtBalda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(3, 3, 3)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5)
                     .addComponent(txtCodigoLibro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(12, 12, 12)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(txtCodigoLibro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(11, 11, 11)
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(txtAñoInicial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtAñoFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                     .addComponent(jLabel7))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -664,13 +875,25 @@ public class JDialogProyecto extends javax.swing.JDialog {
                 .addComponent(jLabel12)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+=======
+                    .addComponent(txtMeses, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(chkTodos)
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
                     .addComponent(chkEnero)
                     .addComponent(chkFebrero)
                     .addComponent(chkMarzo)
                     .addComponent(chkAbril)
                     .addComponent(chkMayo)
                     .addComponent(chkJunio))
+<<<<<<< HEAD
                 .addGap(18, 18, 18)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(chkJulio)
                     .addComponent(chkAgosto)
@@ -682,6 +905,7 @@ public class JDialogProyecto extends javax.swing.JDialog {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
                     .addComponent(txtDenominacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+<<<<<<< HEAD
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
@@ -691,12 +915,24 @@ public class JDialogProyecto extends javax.swing.JDialog {
                     .addComponent(jLabel11)
                     .addComponent(txtCantPiezasDocum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(11, 11, 11)
+=======
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(txtCantidadFolios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(txtCantPiezasDocum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnImprimir)
                     .addComponent(btnGuardar))
                 .addGap(28, 28, 28))
         );
 
+<<<<<<< HEAD
         jPanel2.setBackground(new java.awt.Color(0, 130, 200));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -759,12 +995,18 @@ public class JDialogProyecto extends javax.swing.JDialog {
             .addGap(0, 27, Short.MAX_VALUE)
         );
 
+=======
+        jLabel3.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
+        jLabel3.setText("CREACION DE UN NUEVO PROYECTO");
+
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
+<<<<<<< HEAD
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -775,11 +1017,20 @@ public class JDialogProyecto extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
+=======
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addGap(223, 223, 223))
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
+<<<<<<< HEAD
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -788,6 +1039,11 @@ public class JDialogProyecto extends javax.swing.JDialog {
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+=======
+                .addComponent(jLabel3)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
                 .addContainerGap())
         );
 
@@ -824,11 +1080,14 @@ public class JDialogProyecto extends javax.swing.JDialog {
         }catch(SQLException e){
             System.out.println(e);
         }
+<<<<<<< HEAD
         this.txtNumEstanteria.requestFocus();
         JFrameProyectos frm = new JFrameProyectos();
         frm.Conectar();
         dispose();
         
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void txtCantidadFoliosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCantidadFoliosActionPerformed
@@ -896,6 +1155,7 @@ public class JDialogProyecto extends javax.swing.JDialog {
 
     private void chkTodosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkTodosActionPerformed
         if(chkTodos.isSelected()==true){
+<<<<<<< HEAD
             chkEnero.setEnabled(false);
             chkFebrero.setEnabled(false);
             chkMarzo.setEnabled(false);
@@ -922,6 +1182,34 @@ public class JDialogProyecto extends javax.swing.JDialog {
             chkOctubre.setEnabled(true);
             chkNoviembre.setEnabled(true);
             chkDiciembre.setEnabled(true);
+=======
+            chkEnero.setSelected(true);
+            chkFebrero.setSelected(true);
+            chkMarzo.setSelected(true);
+            chkAbril.setSelected(true);
+            chkMayo.setSelected(true);
+            chkJunio.setSelected(true);
+            chkJulio.setSelected(true);
+            chkAgosto.setSelected(true);
+            chkSetiembre.setSelected(true);
+            chkOctubre.setSelected(true);
+            chkNoviembre.setSelected(true);
+            chkDiciembre.setSelected(true);
+            //this.txtMeses.setText("Enero a Diciembre");
+        }else{
+            chkEnero.setSelected(false);
+            chkFebrero.setSelected(false);
+            chkMarzo.setSelected(false);
+            chkAbril.setSelected(false);
+            chkMayo.setSelected(false);
+            chkJunio.setSelected(false);
+            chkJulio.setSelected(false);
+            chkAgosto.setSelected(false);
+            chkSetiembre.setSelected(false);
+            chkOctubre.setSelected(false);
+            chkNoviembre.setSelected(false);
+            chkDiciembre.setSelected(false);
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
             this.txtMeses.setText(" ");
         }
     }//GEN-LAST:event_chkTodosActionPerformed
@@ -974,6 +1262,7 @@ public class JDialogProyecto extends javax.swing.JDialog {
         
     }//GEN-LAST:event_chkDiciembreActionPerformed
 
+<<<<<<< HEAD
     private void txtAñoInicialKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAñoInicialKeyTyped
         // TODO add your handling code here:
     }//GEN-LAST:event_txtAñoInicialKeyTyped
@@ -1006,6 +1295,8 @@ public class JDialogProyecto extends javax.swing.JDialog {
         txtBalda.setText(txtCuerpo.getText());
     }//GEN-LAST:event_txtCuerpoKeyPressed
 
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
     /**
      * @param args the command line arguments
      */
@@ -1032,9 +1323,12 @@ public class JDialogProyecto extends javax.swing.JDialog {
             java.util.logging.Logger.getLogger(JDialogProyecto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+<<<<<<< HEAD
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -1070,7 +1364,10 @@ public class JDialogProyecto extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+<<<<<<< HEAD
     private javax.swing.JLabel jLabel12;
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -1080,10 +1377,13 @@ public class JDialogProyecto extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+<<<<<<< HEAD
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField txtAñoFinal;
     private javax.swing.JTextField txtAñoInicial;
@@ -1094,6 +1394,10 @@ public class JDialogProyecto extends javax.swing.JDialog {
     private javax.swing.JTextField txtCuerpo;
     private javax.swing.JTextField txtDenominacion;
     private javax.swing.JTextField txtMeses;
+<<<<<<< HEAD
     public static javax.swing.JTextField txtNumEstanteria;
+=======
+    private javax.swing.JTextField txtNumEstanteria;
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
     // End of variables declaration//GEN-END:variables
 }

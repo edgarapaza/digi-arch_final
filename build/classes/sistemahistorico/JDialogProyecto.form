@@ -28,6 +28,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
+<<<<<<< HEAD
               <Group type="103" groupAlignment="1" attributes="0">
                   <Component id="jPanel5" max="32767" attributes="0"/>
                   <Component id="jPanel1" alignment="1" max="32767" attributes="0"/>
@@ -40,6 +41,15 @@
                   </Group>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
+=======
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="223" max="-2" attributes="0"/>
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
           </Group>
       </Group>
     </DimensionLayout>
@@ -47,6 +57,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
+<<<<<<< HEAD
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="jPanel2" max="32767" attributes="0"/>
                   <Component id="jPanel4" max="32767" attributes="0"/>
@@ -57,6 +68,12 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
+=======
+              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jPanel1" max="32767" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
           </Group>
       </Group>
     </DimensionLayout>
@@ -65,7 +82,16 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+<<<<<<< HEAD
           <Color blue="d2" green="82" red="0" type="rgb"/>
+=======
+          <Color blue="ac" green="9b" red="5d" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+            <EtchetBorder/>
+          </Border>
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -79,6 +105,7 @@
               <Group type="102" attributes="0">
                   <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -173,6 +200,101 @@
                               </Group>
                           </Group>
                           <EmptySpace min="0" pref="538" max="32767" attributes="0"/>
+=======
+                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="chkTodos" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                                  <Component id="txtDenominacion" min="-2" pref="530" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="chkJulio" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="chkAgosto" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="chkSetiembre" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Component id="chkEnero" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="chkFebrero" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="chkMarzo" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="txtCodigoLibro" min="-2" pref="167" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="txtAñoInicial" min="-2" pref="67" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="txtAñoFinal" min="-2" pref="61" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="chkAbril" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="chkOctubre" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="chkMayo" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="chkNoviembre" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="chkDiciembre" min="-2" max="-2" attributes="0"/>
+                                              <Component id="chkJunio" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Component id="txtMeses" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="txtNumEstanteria" pref="58" max="32767" attributes="0"/>
+                              <Component id="txtCuerpo" max="32767" attributes="0"/>
+                              <Component id="txtBalda" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="btnImprimir" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="txtCantPiezasDocum" alignment="0" pref="75" max="32767" attributes="0"/>
+                                  <Component id="txtCantidadFolios" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -204,16 +326,26 @@
                   </Group>
                   <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                   <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
+<<<<<<< HEAD
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                       <Component id="txtCodigoLibro" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+=======
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtCodigoLibro" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtAñoInicial" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtAñoFinal" alignment="3" min="-2" max="-2" attributes="0"/>
+<<<<<<< HEAD
                       <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -226,6 +358,15 @@
                   <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
+=======
+                      <Component id="txtMeses" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="chkTodos" alignment="3" min="-2" max="-2" attributes="0"/>
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
                       <Component id="chkEnero" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="chkFebrero" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="chkMarzo" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -233,7 +374,11 @@
                       <Component id="chkMayo" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="chkJunio" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
+<<<<<<< HEAD
                   <EmptySpace type="separate" max="-2" attributes="0"/>
+=======
+                  <EmptySpace max="-2" attributes="0"/>
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="chkJulio" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="chkAgosto" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -247,17 +392,29 @@
                       <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtDenominacion" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
+<<<<<<< HEAD
                   <EmptySpace type="separate" max="-2" attributes="0"/>
+=======
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtCantidadFolios" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
+<<<<<<< HEAD
                   <EmptySpace type="separate" max="-2" attributes="0"/>
+=======
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtCantPiezasDocum" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
+<<<<<<< HEAD
                   <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+=======
+                  <EmptySpace max="32767" attributes="0"/>
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btnImprimir" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnGuardar" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -307,7 +464,11 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
+<<<<<<< HEAD
             <Property name="text" type="java.lang.String" value="Fecha Inicial*"/>
+=======
+            <Property name="text" type="java.lang.String" value="A&#xf1;o inicial:*"/>
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
@@ -315,7 +476,11 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
+<<<<<<< HEAD
             <Property name="text" type="java.lang.String" value="Fecha Final*"/>
+=======
+            <Property name="text" type="java.lang.String" value="A&#xf1;o Final:*"/>
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
@@ -328,9 +493,12 @@
         </Component>
         <Component class="javax.swing.JCheckBox" name="chkTodos">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="d2" green="82" red="0" type="rgb"/>
             </Property>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
@@ -342,9 +510,12 @@
         </Component>
         <Component class="javax.swing.JCheckBox" name="chkEnero">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="d2" green="82" red="0" type="rgb"/>
             </Property>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
@@ -356,9 +527,12 @@
         </Component>
         <Component class="javax.swing.JCheckBox" name="chkFebrero">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="d2" green="82" red="0" type="rgb"/>
             </Property>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
@@ -370,9 +544,12 @@
         </Component>
         <Component class="javax.swing.JCheckBox" name="chkMarzo">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="d2" green="82" red="0" type="rgb"/>
             </Property>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
@@ -384,9 +561,12 @@
         </Component>
         <Component class="javax.swing.JCheckBox" name="chkAbril">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="d2" green="82" red="0" type="rgb"/>
             </Property>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
@@ -398,9 +578,12 @@
         </Component>
         <Component class="javax.swing.JCheckBox" name="chkMayo">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="d2" green="82" red="0" type="rgb"/>
             </Property>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
@@ -412,9 +595,12 @@
         </Component>
         <Component class="javax.swing.JCheckBox" name="chkJunio">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="d2" green="82" red="0" type="rgb"/>
             </Property>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
@@ -426,9 +612,12 @@
         </Component>
         <Component class="javax.swing.JCheckBox" name="chkJulio">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="d2" green="82" red="0" type="rgb"/>
             </Property>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
@@ -440,9 +629,12 @@
         </Component>
         <Component class="javax.swing.JCheckBox" name="chkAgosto">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="d2" green="82" red="0" type="rgb"/>
             </Property>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
@@ -454,9 +646,12 @@
         </Component>
         <Component class="javax.swing.JCheckBox" name="chkSetiembre">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="d2" green="82" red="0" type="rgb"/>
             </Property>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
@@ -468,9 +663,12 @@
         </Component>
         <Component class="javax.swing.JCheckBox" name="chkOctubre">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="d2" green="82" red="0" type="rgb"/>
             </Property>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
@@ -482,9 +680,12 @@
         </Component>
         <Component class="javax.swing.JCheckBox" name="chkNoviembre">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="d2" green="82" red="0" type="rgb"/>
             </Property>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
@@ -496,9 +697,12 @@
         </Component>
         <Component class="javax.swing.JCheckBox" name="chkDiciembre">
           <Properties>
+<<<<<<< HEAD
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="d2" green="82" red="0" type="rgb"/>
             </Property>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
@@ -536,9 +740,12 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Imprimir Lomo"/>
           </Properties>
+<<<<<<< HEAD
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnImprimirActionPerformed"/>
           </Events>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         </Component>
         <Component class="javax.swing.JButton" name="btnGuardar">
           <Properties>
@@ -552,15 +759,21 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNumEstanteriaActionPerformed"/>
           </Events>
+<<<<<<< HEAD
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
           </AuxValues>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
         </Component>
         <Component class="javax.swing.JTextField" name="txtCuerpo">
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCuerpoActionPerformed"/>
+<<<<<<< HEAD
             <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtCuerpoKeyPressed"/>
             <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtCuerpoKeyTyped"/>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtBalda">
@@ -576,14 +789,20 @@
         <Component class="javax.swing.JTextField" name="txtA&#xf1;oInicial">
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtA&#xf1;oInicialActionPerformed"/>
+<<<<<<< HEAD
             <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtA&#xf1;oInicialKeyTyped"/>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtA&#xf1;oFinal">
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtA&#xf1;oFinalActionPerformed"/>
             <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtA&#xf1;oFinalKeyPressed"/>
+<<<<<<< HEAD
             <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtA&#xf1;oFinalKeyTyped"/>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtDenominacion">
@@ -594,14 +813,20 @@
         <Component class="javax.swing.JTextField" name="txtCantidadFolios">
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCantidadFoliosActionPerformed"/>
+<<<<<<< HEAD
             <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtCantidadFoliosKeyTyped"/>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtCantPiezasDocum">
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCantPiezasDocumActionPerformed"/>
             <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtCantPiezasDocumKeyPressed"/>
+<<<<<<< HEAD
             <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtCantPiezasDocumKeyTyped"/>
+=======
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="txtMeses">
@@ -609,6 +834,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtMesesActionPerformed"/>
           </Events>
         </Component>
+<<<<<<< HEAD
         <Component class="javax.swing.JLabel" name="jLabel12">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -720,5 +946,17 @@
         </DimensionLayout>
       </Layout>
     </Container>
+=======
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Monospaced" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="CREACION DE UN NUEVO PROYECTO"/>
+      </Properties>
+    </Component>
+>>>>>>> 212b1e8e8b6d99a916e8ed1cb865bd91ebb2c4c2
   </SubComponents>
 </Form>

@@ -16,6 +16,7 @@ public class Validacion {
         int rpta;
         try {
             conn.conectar();
+
             ResultSet res=conn.consulta("SELECT Id_usuario FROM usuario WHERE Nombre_usuario = '"+usuario+"' AND  Passwor = '"+clave+"';");
             res.next();
             int codigo = Integer.parseInt(res.getString(1));
