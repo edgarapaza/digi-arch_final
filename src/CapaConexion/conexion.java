@@ -15,23 +15,13 @@ public class conexion {
     public static Statement estancia;
 
 //CONSTRUCTORES
-
-    //Constructor que toma los datos de conexion por medio de parametros
-    public conexion(String usuario, String clave, String url, String driverClassName, String bd) {
-        this.usuario = usuario;
-        this.clave = clave;
-        this.url = url;
-        this.bd = bd;
-        this.driverClassName = driverClassName;
-    }
-
     //Constructor que crea la conexion sin parametros con unos definidos en la clase
     //(meter los datos correspondientes)
     @SuppressWarnings("static-access")
     public conexion() {
         //poner los datos apropiados
         this.usuario = "root";
-        this.clave = "";
+        this.clave = "admin";
         this.bd = "periodicos";
         this.url = "jdbc:mysql://localhost/"+this.bd;
         this.driverClassName = "com.mysql.jdbc.Driver";
